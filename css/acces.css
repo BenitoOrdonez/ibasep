@@ -1,0 +1,206 @@
+.oscuro{ 
+    background-color: rgba(0,61,16,1.00);
+    color: #ccc;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    }
+.oscuro #contacto h5{
+	color: #222;
+}
+#modo{
+  padding: 10px;
+  float: right;
+  position: relative;
+  z-index: 10;
+  font-weight: 700;
+    }
+#modo:hover{
+background-color: #003609;
+color: #eee;
+    }
+
+html {
+      font-size: 100%;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+    }
+    h5{
+    	font-size: 1.3rem;
+    }
+    li {
+      font-size: 0.8rem;
+    }
+   
+    button{
+      font-size: 1rem;
+    }
+    audio{    	
+    	position: relative;
+      transform: rotate(270deg);
+      transform-origin: left top 0;
+      float: left;
+      z-index: 100;
+
+    }
+
+
+    .f0 {
+      font-size: 0.7rem;
+    }
+    .f1 {
+      font-size: 0.9rem;
+    }
+    .f2 {
+      font-size: 1.1rem;
+    }
+    .f3 {
+      font-size: 1.2rem;
+    }
+    .f4 {
+      font-size: 1.4rem;
+    }
+    #aumentar, #disminuir{
+      padding: 10px;
+      border-radius: 2px;
+      font-weight: bold;
+      float: right;
+	  position: relative;
+	  z-index: 10;
+    }
+#aumentar:hover, #disminuir:hover{
+	color: #eee;
+}
+
+/* ==========================================================================
+   PANEL FLOTANTE Y EFECTOS MODERNOS (IBASEP)
+   ========================================================================== */
+
+/* Transiciones globales para un cambio de tema fluido */
+body, header, section, footer, div, p, a, button, .dpto, .card {
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                color 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Contenedor Flotante con efecto Glassmorphism */
+/* Contenedor Flotante (Arriba a la derecha y formato vertical) */
+.accessibility-panel {
+    position: fixed;
+    top: 65px;          /* Posicionado en la parte superior */
+    right: 15px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 3px 3px;   /* Ajuste de relleno para formato de píldora vertical */
+    border-radius: 25px; 
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 
+                0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column; /* Cambia el orden a vertical */
+    align-items: center;
+    gap: 4px;           /* Separación ligeramente menor entre botones */
+    z-index: 99999;
+}
+
+/* Ajuste del panel en Modo Oscuro */
+body.oscuro .accessibility-panel {
+    background: rgba(30, 41, 59, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones del panel (Más pequeños) */
+.access-btn {
+    width: 20px;        /* Tamaño reducido */
+    height: 20px;       /* Tamaño reducido */
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 0.75rem; /* Letra e íconos más pequeños */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;      /* Ajuste de relleno para íconos pequeños */
+
+}
+
+body.oscuro .access-btn {
+    color: #f1f5f9;
+}
+
+.access-btn:hover {
+    background: rgba(0, 0, 0, 0.06);
+    transform: scale(1.1);
+}
+
+body.oscuro .access-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.access-btn:active {
+    transform: scale(0.95);
+}
+
+/* Divisor estético intermedio (Ahora es una línea horizontal) */
+.panel-divider {
+    width: 20px;        /* Ancho de la línea */
+    height: 1px;        /* Grosor de la línea */
+    background: rgba(0, 0, 0, 0.1);
+    margin: 4px 0;      /* Separación arriba y abajo del divisor */
+}
+
+body.oscuro .panel-divider {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Alternancia de iconos Sol/Luna */
+body .access-btn .icon-sun { display: none; }
+body .access-btn .icon-moon { display: block; }
+
+body.oscuro .access-btn .icon-sun { display: block; }
+body.oscuro .access-btn .icon-moon { display: none; }
+
+/* Redefinición del Modo Oscuro a un Estilo Premium */
+body.oscuro {
+    background-color: #0f172a !important;
+    color: #cbd5e1 !important;
+}
+
+body.oscuro h1, body.oscuro h2, body.oscuro h3, body.oscuro h4, body.oscuro h5 {
+    color: #f8fafc !important;
+}
+
+body.oscuro a {
+    color: #38bdf8;
+}
+
+/* Efecto elegante de elevación para las tarjetas (.dpto u otras cajas) */
+.dpto, .card-custom {
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.dpto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+body.oscuro .dpto {
+    background-color: #1e293b !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}

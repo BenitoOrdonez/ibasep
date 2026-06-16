@@ -1,0 +1,110 @@
+.formulario {
+    margin:0 auto;
+    color: #666;
+    font-family:addled;
+    vertical-align: middle;
+
+}
+form {
+    position: relative;
+    margin:0 1%;
+    width:100%;
+    max-width: 700px;
+    padding: 50px;
+
+}
+input, textarea {
+    opacity: .4;
+    width:95%;
+    height:30px;
+    background: #fff;
+    padding:10px;
+    margin-top:5px;
+    font-size:20px;
+    color:#000;
+    border:1px solid #888;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 1px 3px 7px #333;
+    -webkit-box-shadow: 1px 3px 7px #333;
+    box-shadow: 1px 3px 7px #333;
+}
+input:hover, textarea:hover {
+	background: #fafafa;
+	border: 1px solid #000;
+	-moz-box-shadow: 1px 3px 10px #555;
+	-webkit-box-shadow: 1px 3px 10px #555;
+	box-shadow: 1px 3px 10px #555;
+    opacity: .6;
+
+}
+textarea {
+    height: 200px;
+}
+#submit {
+    padding:10px;
+    width:130px;
+    height:50px;
+    border:1px solid #000000;
+    margin-top:20px;
+    cursor:pointer;
+    text-shadow: 2px 3px 8px #fff;
+    border-radius: 8px;
+    background: -moz-linear-gradient(#fff 50%, #777 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(100%, #777));
+    background: -webkit-linear-gradient(#fff 50%, #777 100%);
+    background: linear-gradient(#fff 50%, #777 100%);
+    -moz-box-shadow: 1px 3px 2px #333;
+    -webkit-box-shadow: 1px 3px 2px #333;
+    box-shadow: 1px 3px 2px #333;
+}
+#buscarnum {
+    font-size: 20px;
+    opacity: 0.4;
+    padding:20px;
+    width:130px;
+    height:50px;
+    border:1px rgba(0,0,0, 0.5);
+    margin-top:20px;
+    cursor:pointer;
+    text-shadow: 2px 3px 8px #fff;
+    border-radius: 8px;
+    background: -moz-linear-gradient(#fff 50%, #777 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(100%, #777));
+    background: -webkit-linear-gradient(#fff 50%, #777 100%);
+    background: linear-gradient(#fff 50%, #777 100%);
+    -moz-box-shadow: 1px 3px 2px #333;
+    -webkit-box-shadow: 1px 3px 2px #333;
+    box-shadow: 1px 3px 2px #333;
+}
+#submit:hover {
+    background: linear-gradient(to bottom,#CF953F,#FCF6BA,#BF8728);;
+    text-shadow: 2px 3px 2px #fff;
+    -moz-box-shadow: 1px 3px 10px #333;
+    -webkit-box-shadow: 1px 3px 10px #333;
+    box-shadow: 1px 3px 10px #333;
+}
+
+.frcomunic{
+    position: relative;
+    margin: 10px 5%;
+    width: auto;
+    height:auto;
+
+}
+#icomunic{
+    vertical-align: middle;
+    width: 100%;
+    height: 300px;
+    
+        -moz-transform: scale(0.99);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.99);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.99);
+        -webkit-transform-origin: 0 0;
+}
+
+
+

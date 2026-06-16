@@ -1,0 +1,121 @@
+@media screen and (max-width: 1024px) {
+ #header { 
+  background-color: rgba(0,8,125,0);
+ }
+	.logo img {
+		width: 70px;
+	}
+  #header .header-content {
+    width: 90%; }
+  #muni_qr{visibility: hidden;}
+  #transp{position: relative; top: -40px;}
+  #frame_width{
+    width: 620px; 
+    overflow: hidden;
+  }
+  #hold_web{
+    margin-left: 10px;
+  }
+  .nav-toggle {
+    display: block; }
+
+  .navigation {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+	margin-left: 0;
+    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s; }
+    .navigation .primary-nav {
+      position: relative;
+      top: 45%;
+      -moz-transform: translateY(-45%);
+      -ms-transform: translateY(-45%);
+      -webkit-transform: translateY(-45%);
+      transform: translateY(-45%); }
+    .navigation li {
+      display: block;
+      margin-bottom: 20px; }
+    .navigation a {
+      display: block;
+      font-size: 25px;
+      margin: 0;
+      text-align: center; }
+
+  .person {
+    margin: 0 auto 50px; }
+    .person-content {
+      text-align: center; }
+    .person .social-icons li {
+      display: inline-block;
+      float: none;
+      margin-bottom: 5px; }
+
+  .testimonials blockquote {
+     height: 230px;
+    overflow: hidden;
+    padding: 20px 5% 0; }
+  .testimonials p {
+    font-size: 26px; }
+
+  .flex-control-nav {
+	width: 80%;
+    bottom: 20px; } }
+@media screen and (max-width: 768px) {
+  img{width: auto; height: auto;}
+  .banner-text {
+    padding-top: 20%; }
+    .banner-text h1 {
+      font-size: 42px; }
+    .banner-text p {
+      font-size: 18px; }
+
+  .flexslider {
+    padding-bottom: 80px; }
+
+	.flex-control-nav {
+    width: 80%; }
+
+  .footer .footer-col {
+    margin-bottom: 50px; } 
+ #transp{position: relative; top: -50px;}
+}
+@media screen and (max-width: 640px) {
+  .banner-text {
+    padding-top: 20%; } 
+.flex-control-nav {
+    width: 80%; }
+#transp{
+	position: relative; 
+	top: -85px; 
+	text-align: left;
+	}
+#transp a img{margin: 0 5%;}
+
+}
+@media screen and (max-width: 480px) {
+	#transp{top: -90px;}
+  .banner-text {
+    padding-top: 20%; }
+    .banner-text h1 {
+      font-size: 32px; } 
+.flex-control-nav {
+    width: 80%; }
+}
+@media screen and (max-width: 320px) {
+  .banner-text {
+    padding-top: 16%; 
+	}
+	.flex-control-nav {
+    width: 80%; }
+
+  .testimonials blockquote {
+    padding: 20px 5% 0; }
+  .testimonials p {
+    font-size: 26px; } }
